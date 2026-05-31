@@ -75,6 +75,7 @@ For VMware dumps: include the .vmss file alongside the .vmem
 
 
 Limitations
-Windows 11 is not supported — Volatility3 symbol tables do not yet cover Windows 11 kernel builds
-Chrome must have been running in Incognito mode at the time the dump was taken — closed tabs will not appear
-If the Chrome heap was paged out to disk at dump time, OTR marker detection may fall back to process tree analysis
+
+        Windows 11 is not supported — Volatility3 symbol tables do not yet cover Windows 11 kernel builds
+        Chrome must have been running in Incognito mode at the time the dump was taken — closed tabs will not appear
+        If the Chrome heap was paged out to disk at dump time, OTR marker detection may fall back to process tree analysis
