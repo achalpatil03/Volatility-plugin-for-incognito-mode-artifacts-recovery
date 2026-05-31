@@ -23,7 +23,7 @@ Exfiltration	Telegram bot exfil, Discord webhooks, cloud uploads, WebSocket C2
 Phishing	BlobPhish pages, AiTM/Evilginx2 proxy domains, inline data URIs
 IP Recon	Shodan, VirusTotal, ipinfo lookups
 
-Installation
+Installation: 
 Install Volatility3
 Clone or download this plugin
 Place the files inside your Volatility3 directory:
@@ -50,28 +50,28 @@ Usage
 
 Output
 
-The plugin automatically exports three report files to the current directory on every run:
-
-incognito_<timestamp>.json — machine-readable full report
-incognito_<timestamp>.csv — spreadsheet-compatible
-incognito_<timestamp>.html — styled forensic report with threat intel badges
-Results are also printed to the terminal as a prioritized table (credentials and active exfiltration channels first).
+        The plugin automatically exports three report files to the current directory on every run:
+        
+        incognito_<timestamp>.json — machine-readable full report
+        incognito_<timestamp>.csv — spreadsheet-compatible
+        incognito_<timestamp>.html — styled forensic report with threat intel badges
+        Results are also printed to the terminal as a prioritized table (credentials and active exfiltration channels first).
 
 Options
-Flag	Description
---keywords	Comma-separated keywords/IOCs to match against all artifacts
---timeline	Enable/disable timeline reconstruction (default: enabled)
---enrich	Query threat intel APIs for extracted URLs and IPs
---vt-key	VirusTotal API key (free tier: 500 lookups/day)
---pt-key	PhishTank application key (optional)
---aipdb-key	AbuseIPDB API key (free tier: 1000 checks/day)
+        Flag	Description
+        --keywords	Comma-separated keywords/IOCs to match against all artifacts
+        --timeline	Enable/disable timeline reconstruction (default: enabled)
+        --enrich	Query threat intel APIs for extracted URLs and IPs
+        --vt-key	VirusTotal API key (free tier: 500 lookups/day)
+        --pt-key	PhishTank application key (optional)
+        --aipdb-key	AbuseIPDB API key (free tier: 1000 checks/day)
 
 
 Requirements
-Python 3.8+
-Volatility3
-A Windows 10 memory dump (.mem, .vmem, .raw)
-For VMware dumps: include the .vmss file alongside the .vmem
+        Python 3.8+
+        Volatility3
+        A Windows 10 memory dump (.mem, .vmem, .raw)
+        For VMware dumps: include the .vmss file alongside the .vmem
 
 
 Limitations
