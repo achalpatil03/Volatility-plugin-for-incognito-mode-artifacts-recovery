@@ -68,6 +68,10 @@ Options
 
 
 Requirements
+
+
+
+
         Python 3.8+
         Volatility3
         A Windows 10 memory dump (.mem, .vmem, .raw)
