@@ -27,12 +27,12 @@ Clone or download this plugin
 Place the files inside your Volatility3 directory:
 
 volatility3/
-└── plugins/
-    └── windows/
+
         └── incognito_scanner/
             ├── __init__.py
             ├── artifact.py
             └── plugin.py
+
 Usage
 Basic scan:
 
