@@ -49,6 +49,7 @@ Usage
         python vol.py -f memory.mem windows.incognito_scanner --timeline false
 
 Output
+
 The plugin automatically exports three report files to the current directory on every run:
 
 incognito_<timestamp>.json — machine-readable full report
